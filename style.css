@@ -1,0 +1,251 @@
+html {
+	scroll-behavior: smooth;
+  }
+
+body {
+		font-family: 'Varela Round';
+		font-size: 18px;
+}
+
+.container {
+	overflow: auto;
+	position: fixed; /* stays on top */
+	padding-bottom: 2px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	display: block;
+	right: 0;
+	left: 0;
+	top: 0;
+	overflow-y: auto;
+	/* z-index: 1; */
+	
+}
+
+header {
+	position: fixed; /* stays on top */
+	background-color:aqua;
+	display: block;
+	width: 100%;
+	height: 128px;
+	z-index: 1000 !important
+}
+
+.bottom_bar {
+	border-bottom: groove;
+	border-bottom-left-radius:  20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-width: 20px;
+	border-bottom-style: ridge;
+	border-bottom-color: rgb(113, 199, 149);
+}
+
+.section_w {
+	background-color: white;
+}
+
+.section_g {
+	background-color: #eee;
+}
+
+.line {
+	display: block;
+	width: 290px;
+	height: 3px;
+	padding: 0!important;
+	background: rgb(113, 199, 149);
+}
+
+.line_p {
+	width: 100px;
+	height: 0.5px;
+	padding-top: 0px;
+	background: rgb(95, 95, 95);
+	
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+.title {
+	text-align: center;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+.content {
+	text-align: center;
+	margin: 0 auto;
+	font-size: medium;
+	padding-bottom: 25px;
+}
+
+iframe:focus {
+	outline: none;
+}
+
+.iframe_fix {
+	margin-left: 910px;
+}
+
+iframe[seamless] {
+	display: block;
+}
+
+/* Photos */
+
+.carousel-inner img {
+	margin: auto;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+	position: absolute;
+	margin-top: -50px;
+	bottom: -50px;
+	border: 0;
+}
+
+.head_logo {
+	/* position: relative; */
+	margin-right: 50px;
+	margin-top: 1px;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+}
+
+.all_logos {
+	/* text-indent: -999999px; */
+	/* background: url('C:/Users/edoli/Desktop/WebPage/about.png'); */
+	display: block; /* centers the photo */
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 75%;
+}
+
+.q_logo {
+	display: block; /* centers the photo */
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.logo_fixed_margin {
+	margin-top: -30px;
+}
+
+#myCarousel {
+	padding-bottom: 0px;
+}
+
+.bg_fix {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+}
+
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* Navigation Bar */
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0 auto; /* above and lower spaces of bullets */
+	padding: 0; /* between bullets and titles */
+	list-style: none; /* bullets off */
+}
+
+nav li {
+	display: inline-block; /* text allignment in a row */
+	margin-left: 50px; /* spaces between titles */
+	padding-top: 90px;
+	position: relative;
+}
+
+nav a {
+	color: #444444;
+	text-decoration: none; /* no underlines */
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover {
+	color: rgb(62, 185, 114);
+	text-decoration: none; /* no underlines */
+}
+
+nav a::before {
+	margin-top: 75px; /* hover above word */
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: rgb(93, 230, 173);
+	position: absolute;
+	top: 0;
+	width: 0%;
+
+	transition: all ease-in-out 200ms; /* animation */
+}
+
+nav a:hover::before {	
+	width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: rgb(58, 190, 151);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #418357;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container_contact {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
